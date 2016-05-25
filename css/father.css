@@ -16,48 +16,169 @@
 
 /***** SITE STYLES *************/
 /**********************************/
-/* line 16, ../scss/father.scss */
+/* line 17, ../scss/father.scss */
+.top-left p {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+/* line 26, ../scss/father.scss */
+.program-text {
+  background-color: gray;
+  text-align: center;
+}
+/* line 30, ../scss/father.scss */
+.program-text h2 {
+  margin: 0;
+}
+
+/* line 35, ../scss/father.scss */
+.row {
+  text-align: center;
+  margin-top: 25px;
+}
+/* line 39, ../scss/father.scss */
+.row h2 {
+  text-align: center;
+}
+/* line 42, ../scss/father.scss */
+.row div {
+  border-right: none;
+}
+
+/* line 47, ../scss/father.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 52, ../scss/father.scss */
+.top-left {
+  text-align: center;
+  background: url(../img/mainpic2.jpg) no-repeat 0 0;
+  padding-bottom: 30%;
+  background-size: cover;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+
+/* line 63, ../scss/father.scss */
+.top-right {
+  background: url(../img/littleboy.jpg) no-repeat 0 0;
+  padding-bottom: 30%;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+/* line 71, ../scss/father.scss */
+.top-left-second {
+  background: url(../img/spanishdad.jpg) no-repeat 0 0;
+  padding-bottom: 30%;
+  background-size: cover;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* line 80, ../scss/father.scss */
+.top-right-second {
+  background: url(../img/tattoman.jpg) no-repeat 0 0;
+  padding-bottom: 30%;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+/* line 93, ../scss/father.scss */
+.logo {
+  width: 25%;
+  max-width: 100px;
+}
+
+/* line 98, ../scss/father.scss */
+.hide-me li:hover, .hide-me li:focus {
+  background-color: white;
+  color: blue;
+  width: 100%;
+}
+
+/* line 105, ../scss/father.scss */
+.hide-me {
+  padding-top: 50px;
+  width: 100%;
+}
+/* line 108, ../scss/father.scss */
+.hide-me li {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+/* line 113, ../scss/father.scss */
+.hide-me a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+/* line 122, ../scss/father.scss */
 .desktop-nav {
   background-color: #89bdd3;
   padding-top: 20px;
 }
-/* line 19, ../scss/father.scss */
-.desktop-nav img {
-  width: 50%;
-  max-width: 100px;
-  float: left;
-}
-/* line 24, ../scss/father.scss */
+/* line 126, ../scss/father.scss */
 .desktop-nav ul {
   float: right;
 }
 
-/* line 29, ../scss/father.scss */
+/* line 133, ../scss/father.scss */
+.toggle-me {
+  float: right;
+  width: 25%;
+  max-width: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* line 143, ../scss/father.scss */
+.desk {
+  display: none;
+}
+
+/* line 146, ../scss/father.scss */
 .main-pic {
-  position: absolute;
-  margin: 0 auto;
+  position: relative;
   text-align: center;
   background: url(../img/mainpic2.jpg) no-repeat 0 0;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
   padding-top: 5%;
-  padding-bottom: 30%;
+  padding-bottom: 10%;
   opacity: 2.5;
-  margin-top: -15px;
-  image-attachment: fixed;
+  margin-top: -0px;
 }
-/* line 42, ../scss/father.scss */
+/* line 157, ../scss/father.scss */
 .main-pic h1 {
-  display: none;
+  text-align: center;
+  display: block;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800px;
+  font-size: 3.0em;
+  text-shadow: 0px 0px 10px #000;
+  -webkit-font-smoothing: antialiased;
 }
-/* line 45, ../scss/father.scss */
+/* line 167, ../scss/father.scss */
 .main-pic p {
   color: white;
   font-size: 1.7em;
   font-family: 'Lato', sans-serif;
   text-shadow: 0px 0px 10px #000;
 }
-/* line 51, ../scss/father.scss */
+/* line 173, ../scss/father.scss */
 .main-pic button {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -71,110 +192,93 @@
   box-shadow: 0px 0px 25px #000;
 }
 
-/* line 65, ../scss/father.scss */
+/* line 187, ../scss/father.scss */
 .left {
   background: url(../img/mainpic2.jpg) no-repeat 0 0;
   padding-bottom: 20%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 75, ../scss/father.scss */
-  .top p {
-    background-color: blue;
-  }
-
-  /* line 80, ../scss/father.scss */
-  .extra {
-    display: none;
-  }
-
-  /* line 84, ../scss/father.scss */
-  .top-left:hover > .extra {
-    display: block;
-    background-color: blue;
-    z-index: 100;
-    opacity: 0.5;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-  }
-
-  /* line 100, ../scss/father.scss */
-  .top-right {
-    width: 50%;
-    float: right;
-    background: url(../img/mainpic2.jpg) no-repeat 0 0;
-    background-size: cover;
-    -webkit-font-smoothing: antialiased;
-    padding-bottom: 25%;
-  }
-
-  /* line 108, ../scss/father.scss */
-  .top-left {
-    float: left;
-    width: 50%;
-    background: url(../img/mainpic2.jpg) no-repeat 0 0;
-    background-size: cover;
-    -webkit-font-smoothing: antialiased;
-    padding-bottom: 25%;
-  }
-
-  /* line 116, ../scss/father.scss */
-  .third-section {
-    background-color: white;
-    padding-bottom: 20px;
-  }
-  /* line 119, ../scss/father.scss */
-  .third-section img {
-    float: left;
-    width: 45%;
-  }
-  /* line 123, ../scss/father.scss */
-  .third-section p {
-    float: right;
-    width: 45%;
-    font-size: 1.7em;
-  }
-
   /*end of 600 */
 }
 @media screen and (min-width: 800px) {
-  /* line 132, ../scss/father.scss */
+  /* line 200, ../scss/father.scss */
+  .row {
+    text-align: center;
+    margin-top: 25px;
+  }
+  /* line 204, ../scss/father.scss */
+  .row h2 {
+    text-align: center;
+  }
+  /* line 207, ../scss/father.scss */
+  .row div {
+    border-right: 1px solid black;
+  }
+
+  /* line 214, ../scss/father.scss */
+  .toggle-me {
+    display: none;
+  }
+
+  /* line 218, ../scss/father.scss */
+  .top-left {
+    width: 50%;
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  /* line 225, ../scss/father.scss */
+  .top-right {
+    width: 50%;
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  /* line 231, ../scss/father.scss */
+  .top-left-second {
+    width: 50%;
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  /* line 238, ../scss/father.scss */
+  .top-right-second {
+    width: 50%;
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  /* line 248, ../scss/father.scss */
   .head-wrap {
     width: 70%;
     margin: 0 auto;
+    display: block;
   }
 
-  /* line 136, ../scss/father.scss */
+  /* line 253, ../scss/father.scss */
   body {
     background-color: #c9c9c9;
   }
 
-  /* line 141, ../scss/father.scss */
+  /* line 258, ../scss/father.scss */
   .text-box {
     width: 42%;
     float: right;
     margin-top: 50px;
   }
 
-  /* line 146, ../scss/father.scss */
+  /* line 263, ../scss/father.scss */
   .wrapper {
     width: 70%;
     margin: 0 auto;
   }
 
-  /* line 151, ../scss/father.scss */
-  .left {
-    background: url(../img/mainpic2.jpg) no-repeat 0 0;
-    padding-bottom: 50%;
-  }
-
-  /* line 156, ../scss/father.scss */
+  /* line 269, ../scss/father.scss */
   .main-pic {
     position: relative;
-    margin: 0 auto;
     text-align: center;
     background: url(../img/mainpic2.jpg) no-repeat 0 0;
     background-size: cover;
@@ -183,8 +287,10 @@
     padding-bottom: 10%;
     opacity: 2.5;
     margin-top: -0px;
+    width: 70%;
+    margin: 0 auto;
   }
-  /* line 168, ../scss/father.scss */
+  /* line 282, ../scss/father.scss */
   .main-pic h1 {
     text-align: center;
     display: block;
@@ -196,23 +302,34 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* line 179, ../scss/father.scss */
+  /* line 294, ../scss/father.scss */
+  .top-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* line 299, ../scss/father.scss */
   .desktop-nav {
     top: 0px;
     padding-top: 20px;
   }
-  /* line 182, ../scss/father.scss */
+  /* line 303, ../scss/father.scss */
+  .desktop-nav ul {
+    display: block;
+    margin-top: -40px;
+  }
+  /* line 308, ../scss/father.scss */
   .desktop-nav li {
     list-style-type: none;
     display: inline-block;
     margin-left: 15px;
   }
-  /* line 188, ../scss/father.scss */
+  /* line 314, ../scss/father.scss */
   .desktop-nav a {
     color: white;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
+    font-size: 18px;
   }
 }
 /*end of 800 */
